@@ -29,7 +29,7 @@ searchbutton.addEventListener("click",()=>{
 const  firstApi = "ff7c23f7fcfac7c7e1ba0abd18ac421e";
 
 function inputing(cityname){
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${firstApi}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityname}&limit=1&appid=${firstApi}`)
     .then((res)=>{
         return res.json();
     })
